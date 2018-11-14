@@ -19,4 +19,9 @@ public class Milk extends Decorator {
     public double cost() {
         return this.beverage.cost() + 10;
     }
+
+    @Override
+    public String getDescription() {
+        return this.beverage.getDescription() + "Milk ";
+    }
 }

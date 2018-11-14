@@ -13,6 +13,11 @@ public class ExtraChoclate extends Decorator {
     }
 
     @Override
+    public String getDescription(){
+        return this.beverage.getDescription()+"Extra Choclate ";
+    }
+
+    @Override
     public double cost() {
         return this.beverage.cost() + 10;
     }

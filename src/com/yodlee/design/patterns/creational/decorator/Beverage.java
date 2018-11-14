@@ -14,7 +14,5 @@ public abstract class Beverage {
 
     public abstract double cost();
 
-    public  String getDescription(){
-        return this.description;
-    }
+    public abstract String getDescription();
 }
