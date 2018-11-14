@@ -4,12 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
+import java.util.function.Predicate;
 
 public class FilterEmployeeClient {
 
     private  Predicate predicate;
 
-    public FilterEmployeeClient(Predicate predicate){
+    public FilterEmployeeClient(Predicate<Employee> predicate){
         this.predicate = predicate;
     }
 
@@ -28,7 +29,13 @@ public class FilterEmployeeClient {
     public static void main(String[] args) {
 
         List<Employee> empList = fetchEmployees();
-        FilterEmployeeClient employeeClient = new FilterEmployeeClient(new FilterEmployeesGT40());
+        Predicate<Employee> ageBeyween25And40= (employee) -> (employee.getAge() > 25 && employee.getAge() <= 40);
+        FilterEmployeeClient employeeClient = new FilterEmployeeClient(new Predicate<Employee>() {
+            @Override
+            public boolean test(Employee employee) {
+                return (employee.getAge() > 25 && employee.getAge() <= 40);
+            }
+        });
         List<Employee> filteredEmployees = employeeClient.filterEmployees(empList);
 
         Iterator<Employee> iterator = filteredEmployees.iterator();
