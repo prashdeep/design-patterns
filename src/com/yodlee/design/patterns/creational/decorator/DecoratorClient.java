@@ -3,7 +3,7 @@ package com.yodlee.design.patterns.creational.decorator;
 public class DecoratorClient {
 
     public static void main(String[] args) {
-        Expresso expresso = new Expresso("Expresso coffee - ");
+       /* Expresso expresso = new Expresso("Expresso coffee - ");
         Beverage milk = new Milk(expresso);
         Beverage choclate = new ExtraChoclate(milk);
 
@@ -12,6 +12,6 @@ public class DecoratorClient {
 
         System.out.println(choclate.cost());
 
-
+*/
     }
 }

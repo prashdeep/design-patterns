@@ -1,6 +1,6 @@
 package com.yodlee.design.patterns.creational.decorator;
 
-public class Capuccino extends Beverage {
+public abstract class Capuccino extends Beverage {
 
     public Capuccino(String description) {
         super(description);

@@ -1,6 +1,6 @@
 package com.yodlee.design.patterns.creational.decorator;
 
-public class Whip extends Decorator {
+public abstract class Whip extends Decorator {
     private Beverage beverage;
 
     private String description = "Whip - Decorator";
