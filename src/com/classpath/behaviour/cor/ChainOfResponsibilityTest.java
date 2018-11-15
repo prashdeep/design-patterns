@@ -4,7 +4,7 @@ public class ChainOfResponsibilityTest {
 	
 	public static void main(String[] args) {
 		getChainOfAuthProcessor();
-		givenOAuthProvider_whenCheckingAuthorized_thenSuccess();
+		//givenOAuthProvider_whenCheckingAuthorized_thenSuccess();
 		givenSamlProvider_whenCheckingAuthorized_thenSuccess();
 	}
 	
