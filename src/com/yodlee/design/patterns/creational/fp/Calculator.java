@@ -1,0 +1,11 @@
+package com.yodlee.design.patterns.creational.fp;
+
+public class Calculator {
+    public int add(int a, int b){
+        return a + b;
+    }
+
+    public int product(int a, int b){
+        return a * b;
+    }
+}
