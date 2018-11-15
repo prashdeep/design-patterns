@@ -21,39 +21,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="205" />
+          <entry key="java" value="206" />
           <entry key="ser" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="205" />
+          <entry key="JAVA" value="206" />
           <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="10218" />
+          <entry key="java" value="10321" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="10218" />
+          <entry key="JAVA" value="10321" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/classpath/behavior/memento/MementoClient.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1683">
-              <caret line="51" column="1" lean-forward="true" selection-start-line="51" selection-start-column="1" selection-end-line="51" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/bridge/Manufacturer.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -66,8 +57,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/bridge/ManufacturerProvider.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+            <state relative-caret-position="396">
+              <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/bridge/Compatibility.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="4" column="78" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -169,8 +169,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -187,7 +187,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/template/MySQLJdbcTemplate.java" />
         <option value="$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/template/MySQLStatment.java" />
         <option value="$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/template/InsertEmployee.java" />
         <option value="$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/template/JdbcTemplate.java" />
@@ -237,6 +236,7 @@
         <option value="$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/bridge/OSProvider.java" />
         <option value="$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/bridge/Ubuntu.java" />
         <option value="$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/bridge/WindowsOS.java" />
+        <option value="$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/bridge/Compatibility.java" />
         <option value="$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/bridge/ManufacturerProvider.java" />
       </list>
     </option>
@@ -324,7 +324,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/Java_design_patterns/src/com/yodlee/design/patterns/creational/decorator/Expresso.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542264834168" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542266005940" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -335,6 +335,7 @@
       <recent name="D:\Java_design_patterns\src" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.yodlee.design.patterns.creational.bridge" />
       <recent name="com.yodlee.design.patterns.creational.template" />
       <recent name="com.yodlee.design.patterns.creational.singleton.demo" />
     </key>
@@ -487,12 +488,12 @@
       <workItem from="1542093540160" duration="14281000" />
       <workItem from="1542173237770" duration="4498000" />
       <workItem from="1542179212919" duration="1570000" />
-      <workItem from="1542180827645" duration="15117000" />
+      <workItem from="1542180827645" duration="15433000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="35466000" />
+    <option name="totallyTimeSpent" value="35782000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -567,19 +568,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/iterator/Collection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="11" column="31" selection-start-line="11" selection-start-column="19" selection-end-line="11" selection-end-column="31" />
-          <folding>
-            <element signature="e#177#178#0" expanded="true" />
-            <element signature="e#210#211#0" expanded="true" />
-            <element signature="e#251#252#0" expanded="true" />
-            <element signature="e#293#294#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/iterator/IteratorImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -1025,10 +1013,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/bridge/Compatibility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="4" column="78" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/yodlee/design/patterns/creational/bridge/ManufacturerProvider.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+        <state relative-caret-position="396">
+          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
         </state>
       </provider>
     </entry>

@@ -4,12 +4,13 @@ public class ManufacturerProvider {
 
     private Manufacturer manufacturer;
     private OSProvider osProvider;
+    private Compatibility  compatibility;
 
     public ManufacturerProvider(Manufacturer manufacturer, OSProvider osProvider) throws InstantiationException {
         switch (manufacturer.manufactureType){
             case MACBOOK:
-                if( osProvider.getOsType() != OSType.MAC_OS){
-                    throw xception("Invalid Combination");
+                if( !compatibility.isCompatible(manufacturer.manufactureType, osProvider.getOsType())){
+                    throw new InstantiationException("Invalid Combination");
                 }
         }
     }
