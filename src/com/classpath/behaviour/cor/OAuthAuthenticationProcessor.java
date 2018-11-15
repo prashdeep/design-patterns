@@ -6,16 +6,5 @@ public class OAuthAuthenticationProcessor extends AuthenticationProcessor {
         super(nextProcessor);
     }
 
-    @Override
-    public boolean isAuthorized(AuthenticationProvider authProvider) {
-
-        if (authProvider instanceof OAuthTokenProvider) {
-            return Boolean.TRUE;
-        } else if (nextProcessor != null) {
-            return nextProcessor.isAuthorized(authProvider);
-        } else {
-            return Boolean.FALSE;
-        }
-    }
 
 }

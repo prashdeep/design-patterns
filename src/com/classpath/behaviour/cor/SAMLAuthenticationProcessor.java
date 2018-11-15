@@ -8,7 +8,7 @@ public class SAMLAuthenticationProcessor extends AuthenticationProcessor{
 
 	@Override
     public boolean isAuthorized(AuthenticationProvider authProvider) {
-        if (authProvider instanceof SamlAuthenticationProvider) {
+        if (authProvider.authenticate()) {
             return Boolean.TRUE;
         } else if (nextProcessor != null) {
             return nextProcessor.isAuthorized(authProvider);

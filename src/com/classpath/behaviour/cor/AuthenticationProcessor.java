@@ -9,5 +9,13 @@ public abstract class AuthenticationProcessor {
         this.nextProcessor = nextProcessor;
     }
 
-    public abstract boolean isAuthorized(AuthenticationProvider authProvider);
+    public  boolean isAuthorized(AuthenticationProvider authProvider){
+        if (authProvider.authenticate()) {
+            return Boolean.TRUE;
+        } else if (nextProcessor != null) {
+            return nextProcessor.isAuthorized(authProvider);
+        } else {
+            return Boolean.FALSE;
+        }
+    }
 }
