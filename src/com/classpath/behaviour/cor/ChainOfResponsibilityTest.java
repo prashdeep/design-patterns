@@ -9,8 +9,8 @@ public class ChainOfResponsibilityTest {
 	}
 	
     private static AuthenticationProcessor getChainOfAuthProcessor() {
-        AuthenticationProcessor oAuthProcessor = new SAMLAuthenticationProcessor(null);
-        AuthenticationProcessor samlAuthProcessor = new SAMLAuthenticationProcessor(oAuthProcessor);
+        AuthenticationProcessor oAuthProcessor = new OAuthAuthenticationProcessor(null);
+        AuthenticationProcessor samlAuthProcessor = new SAMLAuthenticationProcessor(null);
         return new UsernamePasswordAuthenticationProcessor(samlAuthProcessor);
     }
  
@@ -23,6 +23,6 @@ public class ChainOfResponsibilityTest {
     public static void givenSamlProvider_whenCheckingAuthorized_thenSuccess() {
         AuthenticationProcessor authProcessorChain = getChainOfAuthProcessor();
   
-        System.out.println((authProcessorChain.isAuthorized(new SamlAuthenticationProvider())));
+        System.out.println((authProcessorChain.isAuthorized(new OAuthTokenProvider())));
     }
 }
