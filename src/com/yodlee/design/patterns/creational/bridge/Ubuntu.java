@@ -6,4 +6,9 @@ public class Ubuntu implements OSProvider {
     public String osName() {
         return "Ubuntu";
     }
+
+    @Override
+    public OSType getOsType() {
+        return OSType.UBUNTU;
+    }
 }

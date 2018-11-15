@@ -5,4 +5,9 @@ public class WindowsOS implements OSProvider {
     public String osName() {
         return "Windows 10";
     }
+
+    @Override
+    public OSType getOsType() {
+        return OSType.WINDOWS;
+    }
 }
